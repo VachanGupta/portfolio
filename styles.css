@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Rotating Animation for Icons Only */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Header Styles */
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #CB9DF0;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #F0C1E1;
+}
+
+/* Profile Section */
+.profile h2 {
+    color: #FDDBBB;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Rotating Icon Styles */
+.rotating-icon {
+    font-size: 2rem;
+    animation: rotate 4s linear infinite;
+    margin-bottom: 1rem;
+}
+
+/* Achievements Section */
+.achievements h2 {
+    font-size: 2rem;
+    color: #FDDBBB;
+    margin-bottom: 1.5rem;
+}
+
+.achievement-card {
+    background-color: black;
+    padding: 1.5rem;
+    margin: 0.8rem 0;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 1px solid white;
+}
+
+.achievement-card h3 {
+    font-size: 1.5rem;
+    color: #bb86fc;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-card p {
+    font-size: 1rem;
+    color: #a0a0a0;
+}
+
+/* Hover Effect on Cards */
+.achievement-card:hover {
+    transform: scale(1.05);
+    background-color: #444;
+}
+
+/* Contact Section */
+.contact h2 {
+    font-size: 2rem;
+    color: #FFF9BF;
+    margin-top: 2rem;
+}
+
+.contact p {
+    color: #c0c0c0;
+    margin-bottom: 1rem;
+}
+
+.contact-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #bb86fc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #c7fc86;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.wheel-container {
+    display: flex;
+    gap: 20px;
+}
+
+.wheel {
+    width: 100px;
+    height: 100px;
+    border: 10px solid transparent;
+    border-radius: 50%;
+}
+
+#wheel1 {
+    border-top: 10px solid #3498db;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 350px;
+    right: 275px;
+    z-index: -1;
+}
+
+#wheel2 {
+    border-top: 10px solid #e74c3c;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 500px;
+    left:20px;
+}
+
+#wheel4 {
+    border-top: 10px solid pink;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 270px;
+    top: 40px;
+}
+
+#wheel5 {
+    border-top: 10px solid rgb(236, 145, 8);
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 280px;
+    top: 880px;
+    z-index: -1;
+}
+
+#wheel6 {
+    border-top: 10px solid rgb(0, 255, 238);
+    animation: spin 2s linear infinite;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#wheel7 {
+    border-top: 10px solid rgb(0, 51, 254);
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 20px;
+    top: 1300px;
+}
+
+#wheel8 {
+    border-top: 10px solid rgb(225, 150, 252);
+    animation: spin 2s linear infinite;
+    position: absolute;
+    right: 50px;
+    top: 800px;
+}
+
+#wheel9 {
+    border-top: 10px solid rgb(45, 146, 161);
+    animation: spin 2s linear infinite;
+    position: absolute;
+    right: 300px;
+    top: 1590px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
